@@ -94,15 +94,17 @@
 	catppuccin-sddm
 	cava
 	coreutils
+	curlFull
 	dnsmasq
 	easyeffects
 	fastfetch
 	feh
+	fzf
 	ghostty
 	gimp
 	git
-	github-desktop
 	gnugrep
+	gnused
 	htop
 	htop
 	inkscape
@@ -119,6 +121,7 @@
 	qemu
 	qpwgraph
 	quickshell
+	ueberzugpp
 	virt-manager
 	warp #gtk frontend for magic-wormhole
 	waydroid
