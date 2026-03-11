@@ -53,7 +53,21 @@
     isNormalUser = true;
     description = "boothe";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [
+	#gearlever
+	cava
+	easyeffects
+	gimp
+	htop
+	inkscape
+	kdePackages.kdenlive
+	libreoffice
+	localsend
+	nvtopPackages.full
+	qpwgraph
+	warp #gtk frontend for magic-wormhole
+	waydroid
+    ];
   };
 
   # Allow unfree packages
@@ -86,45 +100,31 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	#gearlever
 	#where-is-my-sddm-theme
 	#xdg-utils
 	blueman
 	bluez
 	catppuccin-sddm
-	cava
 	coreutils
 	curlFull
 	dnsmasq
-	easyeffects
 	fastfetch
 	feh
 	fzf
 	ghostty
-	gimp
 	git
 	gnugrep
 	gnused
-	htop
-	htop
-	inkscape
-	kdePackages.kdenlive
 	kdePackages.okular
 	kdePackages.sddm
-	libreoffice
-	localsend
 	mpv
 	neovim
 	networkmanagerapplet
-	nvtopPackages.full
 	pavucontrol
 	qemu
-	qpwgraph
 	quickshell
 	ueberzugpp
 	virt-manager
-	warp #gtk frontend for magic-wormhole
-	waydroid
 	wget
 	xdg-desktop-portal-hyprland
 	yazi
