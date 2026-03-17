@@ -15,5 +15,8 @@ I have been using the book at https://nixos-and-flakes.thiscute.world for learin
 As of writing this readme I am essentially stuck on making things modular and I am unsure (no scratch that certain) that I am overcomplicating things by seeing what is possible for others while not exactly thinking about my own skill level. With that in mind I am going to make things uncomplicated for my dumb dumb brain and just get something working even if it is essentially just copying what is in the book so I can understand the modular system and tinker later.
 
 Quick update same day, got flakes as modules working. Next step is figuring out how to make nix look in whatever git directory being used so I don't have to constantly copy/paste the files from etc/ (well also figuring out all the things I said there were a better way to do)
+    Also possibly found the solution to my complaining about better way to do both desktop and server config
+        lib.mkForce along with using imports allows for overlapping configs (setup server conf as basic then import into desktop and add options [maybe this might still have the default.nix issue])
+            EITHER WAY BEST COURSE OF ACTION IS TO TINKER WHILE REFERENCING THE CREATORS PERSONAL CONFIG (now that i understand a bit more after completing the flake properly I may be able to make it more complex but proper for deployment of more than 1 type of system)
 
 -B (03-16-26)
