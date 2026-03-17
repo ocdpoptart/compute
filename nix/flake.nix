@@ -13,13 +13,17 @@
 		};
 	};
 
-	outputs = { nixpkgs, home-manager, ... }@inputs: {
+	outputs = { self, nixpkgs, home-manager, ... }@inputs: {
 		nixosConfigurations = {
-		nixos = nixpkgs.lib.nixosSystem {
-			specialArgs = { inherit inputs; };
+		nixos = let
+			username = "boothe"; # so this is defining the username in all '${username}' fields
+			specialArgs = { inherit inputs; inherit username; };
+		in
+		nixpkgs.lib.nixosSystem {
+			inherit specialArgs; # self explanitory
 			modules = [
-					# currently old config
-					./configuration.nix
+					# point to host flake definied above
+					./hosts/nixos 
 	
 					# { _module.args = { inherit inputs; }; } # same as 'specialArgs' just differnt and could be more useful depends on usecase
 					
@@ -27,7 +31,8 @@
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = true;
 						home-manager.useUserPackages = true;
-						home-manager.users.boothe = import ./home.nix; # if for whatever reason using a different user change name
+						home-manager.extraSpecialArgs = specialArgs; # allow home manager to also inherit the above special args
+						home-manager.users.${username} = import ./users/${username}/home.nix; # point to correct user home manager config
 					}
 			];
 		};
