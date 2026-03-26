@@ -20,3 +20,21 @@ Quick update same day, got flakes as modules working. Next step is figuring out 
             EITHER WAY BEST COURSE OF ACTION IS TO TINKER WHILE REFERENCING THE CREATORS PERSONAL CONFIG (now that i understand a bit more after completing the flake properly I may be able to make it more complex but proper for deployment of more than 1 type of system)
 
 -B (03-16-26)
+
+
+Took a break but got around to making the host config for what will eventually be the bare metal machine. Still gonna do some tinkering.
+
+Need to look into: 
+-how the host knows which nix file to look at for rebuild switch
+-proper way to make a networking file so that i don't have to constantly write that section out in the hosts default (will have to have different rules for server and desktop)
+-make sure there is nothing else to add to the flake.nix
+-look into system architecture stuff (might be worthwhile)
+
+GET NIX TO USE A NIX FILE OUTSIDE OF NIXOS/ SO THAT YOU CAN JUST USE THE GIT FOLDER FOR EASY PROGRESS SAVING
+
+-B (03-25-26)
+
+
+
+
+
