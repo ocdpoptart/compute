@@ -34,6 +34,10 @@ GET NIX TO USE A NIX FILE OUTSIDE OF NIXOS/ SO THAT YOU CAN JUST USE THE GIT FOL
 
 -B (03-25-26)
 
+Added steam stuff to desktop module, still gotta find a better way to impliment it (did this after finding out a few things related to the normal package vs the flatpak)
+thinking of doing it through its own nix file in modules that a host could point to so it isn't always installed on desktop image
+
+-B (03-26-26)
 
 
 
