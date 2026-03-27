@@ -62,6 +62,7 @@
 		gnugrep
 		kdePackages.sddm
 		neovim
+		protonup-qt # here until i can figure out where to put steam stuff
 		qemu
 		quickshell
 		wget
@@ -130,4 +131,14 @@
 			TimeoutStopSec = 10;
 		};
 	};
+
+	# Steam & Related until I can think of where else to put it (can't put it in home-manager, might just make its own module)
+	programs.steam = {
+		enable = true; # for steam hardware support
+		remotePlay.openFirewall = true; # firewall ports for remote play
+		#dedicatedServer.openFirewall = true; # ports for Source Dedicated Server hosting
+	};
+	programs.gamemode.enable = true;
+	# look at steam wiki page for more option
+	# mess around and try and find a better way to do this, better to have all steam stuff in its own nix file in the very least (especially when factoring in vr)
 }
