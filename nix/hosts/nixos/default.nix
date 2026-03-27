@@ -2,6 +2,7 @@
 {
 	imports = [
 		../../modules/desktop.nix
+		#../../modules/virt.nix # this line is for testing modules in vm before using them elsewhere
 		./hardware-configuration.nix
 	];
 

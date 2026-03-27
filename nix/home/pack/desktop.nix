@@ -22,7 +22,6 @@
 		pavucontrol
 		qpwgraph
 		ueberzugpp
-		virt-manager
 		warp
 		waydroid
 		yazi

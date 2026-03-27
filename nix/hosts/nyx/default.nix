@@ -2,6 +2,8 @@
 {
 	imports = [
 		../../modules/desktop.nix
+		../../modules/steam.nix
+		../../modules/virt.nix
 		./hardware-configuration.nix
 	];
 
