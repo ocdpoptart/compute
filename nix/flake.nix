@@ -11,12 +11,6 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-		
-		# yt-x (youtube tui)
-		yt-x = {
-			url = "github:Benexl/yt-x";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
 	};
 
 	outputs = { self, nixpkgs, home-manager, ... }@inputs: {
