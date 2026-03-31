@@ -12,6 +12,7 @@
 		gimp
 		htop
 		inkscape
+		inputs.yt-x.packages."${system}".default
 		kdePackages.kdenlive
 		kdePackages.okular
 		libreoffice

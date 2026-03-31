@@ -40,5 +40,15 @@ thinking of doing it through its own nix file in modules that a host could point
 -B (03-26-26)
 
 
+Looking to add yt-x to the new machine, while thinking of the best way to add it while following what it says on the github I looked back to the book creators current flake.nix file
+    something of note is i think the best way for me to do it is gonna be to just add an iputs section to the bottom of the file for anything similar (on the fly correction i can just leave it at the top for now if it gets cluttered then i'll religate it to the bottom with a quick copy and paste)
+    
+    more importantly because this will have to make me rewrite stuff
+        now that i have had time to actually look at what they were doing i believe i can fix my self inflicted problem of not knowing how to differntiate between server and desktop images and it is done in the flake.nix
+            so my brain hurts but the long and short of it is I just need to be pointing to more files using imports in other files, that is of course if i am reading this correctly. i think what is going on in the book is in the flak the host is definied (and pointed to its folder in hosts which imports system modules specifically from modules folder), then the home-manager module is pointed to specific home.nix file depending on the system type (which has its own imports so that the user programs can be different if need be)
+            [I do have to say i am confused about the syntax, on theirs it is written as "home-module = import" but i don't see anything like that on mine nor do i see what is written in mine on theirs which is said to allow reuild switch to update; anyway i guess that just means what is always does "Read The Man", lame]
+
+-B (03-30-26)
+ 
 
 
