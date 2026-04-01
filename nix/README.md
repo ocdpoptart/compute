@@ -67,3 +67,12 @@ Still have to
     - Make a bash.nix for alias stuff (either in home or modules but might just be able to put it in core.nix dunno try it out later)
 
 -B (03-31-26)
+
+Decided to try and move everything from flatpak to home-manager so no thinking in the future
+    - some pacakges didn't exist and some will be tested on nix instead but progress
+
+Still have to do bash.nix
+
+Also really might need to make the network folder so Sunshine can be installed
+
+-B (04-01-26)

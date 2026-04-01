@@ -2,7 +2,7 @@
 {
 	imports = [
 		../../modules/desktop.nix
-		../../modules/steam.nix
+		../../modules/game
 		../../modules/virt.nix
 		./hardware-configuration.nix
 	];
