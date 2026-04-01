@@ -57,4 +57,13 @@ Looking to add yt-x to the new machine, while thinking of the best way to add it
 -B (03-30-26)
  
 
+Dunno what was happening with yt-x but couldn't get it to work, not gonna stress about it more rn
 
+I was able to
+    - stop overthinking the seperation of server and desktop home configs by making 2 different nix files under the user for each (there is probably a more elegant solution than that but hey that is what i could think of and it works)
+    - make a hyprland folder so the hyprland config is stored within the flake instead of outside of it needing to be copied over into the config after
+
+Still have to
+    - Make a bash.nix for alias stuff (either in home or modules but might just be able to put it in core.nix dunno try it out later)
+
+-B (03-31-26)

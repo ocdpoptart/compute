@@ -13,7 +13,7 @@
 		};
 	};
 
-	outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+	outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
 		nixosConfigurations = {
 		nixos = let
 			username = "boothe"; # so this is defining the username in all '${username}' fields
@@ -32,8 +32,26 @@
 						home-manager.useGlobalPkgs = true;
 						home-manager.useUserPackages = true;
 						home-manager.extraSpecialArgs = specialArgs; # allow home manager to also inherit the above special args
-						home-manager.users.${username} = import ./users/${username}/home.nix; # point to correct user home manager config
+						home-manager.users.${username} = import ./users/${username}/desktop.nix; # point to correct user home manager config
 					}
+			];
+		};
+		
+		nyx = let
+			username = "boothe";
+			specialArgs = { inherit inputs; inherit username; };
+		in
+		nixpkgs.lib.nixosSystem {
+			inherit specialArgs;
+			modules = [
+				./hosts/nyx
+				
+				home-manager.nixosModules.home-manager {
+					home-manager.useGlobalPkgs = true;
+					home-manager.useUserPackages = true;
+					home-manager.extraSpecialArgs = specialArgs;
+					home-manager.users.${username} = import ./users/${username}/desktop.nix;
+				}
 			];
 		};
 		};

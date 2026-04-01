@@ -4,7 +4,8 @@
 
 	imports = [
 		../../home/core.nix
-		../../home/pack
+		../../home/pack/desktop.nix
+		../../home/hypr
 	];
 
 	# Git User clearification so no gotta do when push
