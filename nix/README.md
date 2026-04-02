@@ -75,6 +75,12 @@ Still have to do bash.nix
 
 Also really might need to make the network folder so Sunshine can be installed and protonvpn because it didn't work in home-manager
 
-One more thing is there is an warning on boot and i think it is about the hyprland config in home-manager, gotta look into that to correct it
+Corrected hyprland stuff
+
+I am thinking that I may need to restructure the entire thing because as of this moment I am having issues adding programs to home-manager that are not from the nixpkgs repo
+    -It appears to be because I am not making a module for it in home-manager but frankly i am at a bit of a loss with this at this moment
+    -gonna think on it some more, however flake parts seems appealing but i don't know if i am diving in too deep if i set that up (like i haven't even deployed this on anything but a vm)
+    -regardless i feel as tho i am currently missing something and the best way i can see to correct that at this moment may be to split things up even more
+        [the flakes book's author currently has their nixsytem/home-manager stuff separated from the flake.nix, which is amazing for readability once you notice it, so maybe that would help? I don't know like I said, currently at a bit of a loss]
 
 -B (04-01-26)
