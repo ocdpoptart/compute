@@ -73,6 +73,8 @@ Decided to try and move everything from flatpak to home-manager so no thinking i
 
 Still have to do bash.nix
 
-Also really might need to make the network folder so Sunshine can be installed
+Also really might need to make the network folder so Sunshine can be installed and protonvpn because it didn't work in home-manager
+
+One more thing is there is an warning on boot and i think it is about the hyprland config in home-manager, gotta look into that to correct it
 
 -B (04-01-26)
