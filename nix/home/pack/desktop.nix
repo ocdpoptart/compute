@@ -31,6 +31,7 @@
 		nvtopPackages.full
 		parsec-bin
 		pavucontrol
+		pdfarranger
 		plex
 		plexamp
 		#proton-vpn # didn't want to build here might have to make a module for the system or just make a networking folder overall but either way not network manager
