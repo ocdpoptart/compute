@@ -32,7 +32,7 @@
 						home-manager.useGlobalPkgs = true;
 						home-manager.useUserPackages = true;
 						home-manager.extraSpecialArgs = specialArgs; # allow home manager to also inherit the above special args
-						home-manager.users.${username} = import ./users/${username}/desktop.nix; # point to correct user home manager config
+						home-manager.users.${username} = import ./users/${username}/vm.nix; # point to correct user home manager config
 					}
 			];
 		};

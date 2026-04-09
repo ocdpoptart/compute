@@ -84,3 +84,14 @@ I am thinking that I may need to restructure the entire thing because as of this
         [the flakes book's author currently has their nixsytem/home-manager stuff separated from the flake.nix, which is amazing for readability once you notice it, so maybe that would help? I don't know like I said, currently at a bit of a loss]
 
 -B (04-01-26)
+
+Made sure to separate actual desktop from vm stuff
+
+I keep looking at all of the files i am adding to this to make it modular and the more i do it the more i think i should just use flake parts
+    i mean making everything an independent module that can just be loaded at will within the normal nix structure makes sense, that is if i am understanding flake parts correctly
+        i dunno just something to think about
+
+Anyway I think I am just gonna try and get noctalia and caelestia to work as a module in home manager then eventually get back to the bash stuff after that i can look into flake parts
+    after all it will feel like I gave up if I don't
+
+-B (04-08-26)

@@ -39,6 +39,14 @@
 		#};
 	};
 
+	# Sunshine
+	services.sunshine = {
+		enable = true;
+		autoStart = true;
+		capSysAdmin = ture; # for wayland if X disable
+		openFirewall = true;
+	};
+
 	# Fwupd for hardware software updates
 	services.fwupd.enable = true;
 
