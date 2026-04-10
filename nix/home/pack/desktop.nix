@@ -38,6 +38,7 @@
 		protonmail-desktop
 		qpwgraph
 		streamcontroller # might use flatpak instead
+		streamlink
 		thunar
 		ueberzugpp
 		warp
