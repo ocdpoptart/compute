@@ -71,11 +71,6 @@ hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, bezier = "al
 hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
 hl.animation({ leaf = "zoomFactor", enabledd = true, speed = 7, bezier = "quick" })
 
---Ref https://wiki.hyprland.org/Configuring/Workspace-Rules/
---"Smart gaps" / "No gaps when only"
---hl.workspace_rule({ workspace = "2", layout = "scrolling" }) --per-workspace layouts
-hl.workspace_rule({ workspace = "name:game/vid", no_rounding = true, decorate = false, gaps_in = 0, gaps_out = 0, no_border = true, monitor = "desc:Samsung Electric Company LS49AG95 HCSRC00778" })
-
 hl.config({
 	dwindle = { preserve_split = true, },
 })
