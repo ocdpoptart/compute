@@ -14,7 +14,9 @@ hl.config({
 
 		sensitivity = 0, -- -1.0 - 1.0, 0 means no mod
 
-		touchpad { natural_scroll = false, },
+		touchpad = { 
+			natural_scroll = false, 
+		},
 	},
 })
 
@@ -29,7 +31,7 @@ hl.device({
 	sensitivity = -0.5,
 })
 
-hl.dervice({
+hl.device({
 	name = "wacom-cintiq-16-pen",
 	output = "desc:Wacom Tech Cintiq 16 1KW00X1003730",
 })

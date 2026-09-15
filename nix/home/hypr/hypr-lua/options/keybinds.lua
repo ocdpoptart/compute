@@ -6,10 +6,10 @@ local mainMod = "SUPER"
 
 local closeWindowBind = hl.bind("ALT + F4", hl.dsp.window.close())
 --closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + F12", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind("F12", hl.dsp.exec_cmd("ghostty")) --terminal when you figure out how to do the local thing globally
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin")) --fileManager when you get that programs file working
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseuddo())
+hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + O", hl.dsp.layout("togglesplit")) --dwindle
 --hl.bind("ALT + SPACE", hl.dsp.exec_cmd(menu)) --"menu" for quickshell
 
@@ -40,7 +40,7 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 
 --move/resize windows with mouse
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.winddow.resize(), { mouse = true})
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true})
 
 --laptop keys for vol/brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
